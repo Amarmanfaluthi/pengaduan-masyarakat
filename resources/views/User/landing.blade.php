@@ -87,7 +87,7 @@
         </div>
     </div>
 </div>
-{{-- Section Hitung Pengaduan --}}
+<!-- {{-- Section Hitung Pengaduan --}}
 <div class="pengaduan mt-5">
     <div class="bg-purple">
         <div class="text-center">
@@ -95,12 +95,12 @@
             <h2 class="medium text-white">10</h2>
         </div>
     </div>
-</div>
+</div> -->
 {{-- Footer --}}
 <div class="mt-5">
     <hr>
     <div class="text-center">
-        <p class="italic text-secondary">© 2021 Ihsanfrr • All rights reserved</p>
+        <p class="italic text-secondary">© 2024 Amar Manfaluthi • All rights reserved</p>
     </div>
 </div>
 {{-- Modal --}}
