@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
 @endsection
 
-@section('title', 'PEKAT - Pengaduan Masyarakat')
+@section('title', 'ErTeKu')
 
 @section('content')
 {{-- Section Header --}}
@@ -13,8 +13,8 @@
         <div class="container">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <h4 class="semi-bold mb-0 text-white">PEKAT</h4>
-                    <p class="italic mt-0 text-white">Pengaduan Masyarakat</p>
+                    <h4 class="semi-bold mb-0 text-white">ErTeKu</h4>
+                    <p class="italic mt-0 text-white">Lapor Pak ErTe!</p>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,8 +48,8 @@
     </nav>
 
     <div class="text-center">
-        <h2 class="medium text-white mt-3">Layanan Pengaduan Masyarakat</h2>
-        <p class="italic text-white mb-5">Sampaikan laporan Anda langsung kepada kami</p>
+        <h2 class="medium text-white mt-3">Layanan Pengaduan Warga RT 008</h2>
+        <p class="italic text-white mb-5">Laporkan kerusakan sarana prasana umum disekitarmu</p>
     </div>
 
     <div class="wave wave1"></div>
@@ -72,7 +72,7 @@
                 <div class="alert alert-{{ Session::get('type') }}">{{ Session::get('pengaduan') }}</div>
             @endif
 
-            <div class="card mb-3">Tulis Laporan Disini</div>
+            <div class="card mb-3">Sarana Prasarana Apa Yang Bermasalah?</div>
             <form action="{{ route('pekat.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
