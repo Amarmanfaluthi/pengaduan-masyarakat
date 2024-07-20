@@ -13,8 +13,8 @@
         <div class="container">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <h4 class="semi-bold mb-0 text-white">ErTeKu</h4>
-                    <p class="italic mt-0 text-white">Lapor Pak ErTe!</p>
+                    <h4 class="semi-bold mb-0 text-landing">ErTeKu</h4>
+                    <p class="italic mt-0 text-landing">Lapor Pak ErTe!</p>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,7 +106,7 @@
 {{-- Modal --}}
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content" style= "background:#afdde5">
             <div class="modal-body">
                 <h3 class="mt-3">Masuk terlebih dahulu</h3>
                 <p>Silahkan masuk menggunakan akun yang sudah didaftarkan.</p>

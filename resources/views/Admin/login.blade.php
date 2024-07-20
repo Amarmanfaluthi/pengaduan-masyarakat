@@ -8,13 +8,19 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <style>
             body {
-                background: #6a70fc;
+                background: #0FA4AF;
             }
 
             .btn-purple {
-                background: #6a70fc;
+                background: #964734;
                 width: 100%;
                 color: #fff;
+            }
+
+            .btn-home{
+                color: #f1870d;
+                background-color: #f1870d;
+                border-color: #f1870d;
             }
 
         </style>
@@ -25,8 +31,8 @@
     <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-5">
-            <h2 class="text-center text-white mb-0 mt-5">PEKAT</h2>
-            <P class="text-center text-white mb-5">Pengaduan Masyarakat</P>
+            <h2 class="text-center text-white mb-0 mt-5">ErTeKu</h2>
+            <P class="text-center text-white mb-5">Lapor Pak ErTe!</P>
             <div class="card mt-5">
                 <div class="card-body">
                     <h2 class="text-center mb-5">FORM PETUGAS</h2>
@@ -47,7 +53,7 @@
                 {{ Session::get('pesan') }}
             </div>
             @endif
-            <a href="{{ route('pekat.index') }}" class="btn btn-warning text-white mt-3" style="width: 100%">Kembali ke Halaman Utama</a>
+            <a href="{{ route('pekat.index') }}" class="btn btn-home text-white mt-3" style="width: 100%">Kembali ke Halaman Utama</a>
         </div>
     </div>
 </div>

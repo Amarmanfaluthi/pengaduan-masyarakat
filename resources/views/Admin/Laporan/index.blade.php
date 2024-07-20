@@ -20,7 +20,7 @@
                         <div class="form-group">
                             <input type="text" name="to" class="form-control" placeholder="Tanggal Akhir" onfocus="(this.type='date')" onblur="(this.type='text')">
                         </div>
-                        <button type="submit" class="btn btn-purple" style="width: 100%">Cari Laporan</button>
+                        <button type="submit" class="btn btn-brown" style="width: 100%">Cari Laporan</button>
                     </form>
                 </div>
             </div>

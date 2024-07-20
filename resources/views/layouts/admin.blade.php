@@ -13,14 +13,14 @@
         
     @yield('css')
     <style>
-        .btn-purple {
-            background: #6a70fc;
-            border: 1px solid #6a70fc;
+        .btn-brown {
+            background: #964734;
+            border: 1px solid #964734;
             color: #fff;
         }
         .btn-purple:hover {
-            background: #6a70fc;
-            border: 1px solid #6a70fc;
+            background: #964734;
+            border: 1px solid #964734;
             color: #fff;
         }
     </style>
@@ -33,8 +33,8 @@
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3 class="mb-0">PEKAT</h3>
-                <p class="text-white mb-0">Pengaduan Masyarakat</p>
+                <h3 class="mb-0">ErTeKu</h3>
+                <p class="text-white mb-0">Lapor Pak ErTe!</p>
             </div>
 
             <ul class="list-unstyled components">
@@ -55,8 +55,7 @@
                 </li>
             </ul>
         </nav>
-
-
+        
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -75,7 +74,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                        <a href="" class="btn btn-white btn-sm">{{ Auth::guard('admin')->user()->nama_petugas }}</a>
+                        <a href="{{ route('admin.formLogin') }}" class="btn btn-white btn-sm">{{ Auth::guard('admin')->user()->nama_petugas }}</a>
                         <!-- @if (Auth::guard('admin')->check())
                                 <a href="" class="btn btn-white btn-sm">{{ Auth::guard('admin')->user()->nama_petugas }}</a>
                             @else

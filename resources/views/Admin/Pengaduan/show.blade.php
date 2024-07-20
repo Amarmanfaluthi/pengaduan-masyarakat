@@ -9,16 +9,16 @@
         }
 
         .text-grey {
-            color: #6c757d;
+            color: #964734;
         }
 
         .text-grey:hover {
-            color: #6c757d;
+            color: #964734;
         }
 
         .btn-purple {
-            background: #6a70fc;
-            border: 1px solid #6a70fc;
+            background: #964734;
+            border: 1px solid #964734;
             color: #fff;
             width: 100%; 
         }

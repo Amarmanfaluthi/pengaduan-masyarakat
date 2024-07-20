@@ -33,17 +33,17 @@ body {
 }
 
 .tab:hover {
-    color: #6a70fc;
+    color: #0FA4AF;
     text-decoration: none;
     font-weight: 300;
     padding: 0px 6px 10px 6px;
-    border-bottom: 2px solid #6a70fc;
+    border-bottom: 2px solid #0FA4AF;
 }
 
 .tab-active {
     font-size: 20px;
-    border-bottom: 2px solid #6a70fc;
-    color: #6a70fc;
+    border-bottom: 2px solid #0FA4AF;
+    color: #0FA4AF;
     padding-bottom: 10px;
 }
 
