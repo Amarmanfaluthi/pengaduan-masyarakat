@@ -73,17 +73,30 @@
             @endif
 
             <div class="card mb-3">Sarana Prasarana Apa Yang Bermasalah?</div>
-            <form action="{{ route('pekat.store') }}" method="POST" enctype="multipart/form-data">
-                @csrf
-                <div class="form-group">
-                    <textarea name="isi_laporan" placeholder="Masukkan Isi Laporan" class="form-control"
-                        rows="4">{{ old('isi_laporan') }}</textarea>
-                </div>
-                <div class="form-group">
-                    <input type="file" name="foto" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-custom mt-2">Kirim</button>
-            </form>
+            @if(Auth::guard('masyarakat')->check())
+                <form id="laporanForm" action="{{ route('pekat.store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group">
+                        <textarea name="isi_laporan" placeholder="Masukkan Isi Laporan" class="form-control"
+                            rows="4">{{ old('isi_laporan') }}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="foto" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-custom mt-2">Kirim</button>
+                </form>
+            @else
+                <form id="dummyForm">
+                    <div class="form-group">
+                        <textarea name="isi_laporan" placeholder="Login terlebih dahulu" class="form-control"
+                            rows="4" disabled>{{ old('isi_laporan') }}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="foto" class="form-control" disabled>
+                    </div>
+                    <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#loginModal">Kirim</button>
+                </form>
+            @endif
         </div>
     </div>
 </div>

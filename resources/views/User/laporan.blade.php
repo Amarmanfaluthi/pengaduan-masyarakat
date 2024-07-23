@@ -21,7 +21,10 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-nav text-center ml-auto" href="{{ route('pekat.index') }}">
+                    <h4 class="nav-item nav-link ml-3 text-white">HOME</h4>
+                </a>
+                <!-- <div class="collapse navbar-collapse" id="navbarNav">
                     @if(Auth::guard('masyarakat')->check())
                     <ul class="navbar-nav text-center ml-auto">
                         <li class="nav-item">
@@ -43,7 +46,7 @@
                         </li>
                     </ul>
                     @endauth
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
@@ -111,9 +114,9 @@
 
     <div class="row mt-5">
         <div class="col-lg-8">
-            <a class="d-inline tab {{ $siapa != 'me' ? 'tab-active' : ''}} mr-4" href="{{ route('pekat.laporan') }}">
+            <!-- <a class="d-inline tab {{ $siapa != 'me' ? 'tab-active' : ''}} mr-4" href="{{ route('pekat.laporan') }}">
                 Semua
-            </a>
+            </a> -->
             <a class="d-inline tab {{ $siapa == 'me' ? 'tab-active' : ''}}" href="{{ route('pekat.laporan', 'me') }}">
                 Laporan Saya
             </a>

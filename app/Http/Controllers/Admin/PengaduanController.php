@@ -24,4 +24,5 @@ class PengaduanController extends Controller
 
         return view('Admin.Pengaduan.show', ['pengaduan' => $pengaduan, 'tanggapan' => $tanggapan]);
     }
+
 }
