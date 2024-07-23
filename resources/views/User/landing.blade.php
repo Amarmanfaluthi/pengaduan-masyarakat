@@ -24,11 +24,14 @@
                     @if(Auth::guard('masyarakat')->check())
                     <ul class="navbar-nav text-center ml-auto">
                         <li class="nav-item">
+                                <span class="nav-link ml-6 text-white"> Hai, Selamat Datang {{ Auth::guard('masyarakat')->user()->nama }}</span>
+                            </li>
+                        <li class="nav-item">
                             <a class="nav-link ml-3 text-white" href="{{ route('pekat.laporan') }}">Laporan</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ml-3 text-white" href="{{ route('pekat.logout') }}"
-                                style="text-decoration: underline">{{ Auth::guard('masyarakat')->user()->nama }}</a>
+                                style="text-decoration: underline">Logout</a>
                         </li>
                     </ul>
                     @else
