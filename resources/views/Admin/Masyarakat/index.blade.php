@@ -22,7 +22,7 @@
                 <th>Nama</th>
                 <th>Username</th>
                 <th>Telp</th>
-                <th>Detail</th>
+                <!-- <th>Detail</th> -->
             </tr>
         </thead>
         <tbody>
@@ -33,7 +33,7 @@
                 <td>{{ $v->nama }}</td>
                 <td>{{ $v->username }}</td>
                 <td>{{ $v->telp }}</td>
-                <td><a href="{{ route('masyarakat.show', $v->nik) }}" style="text-decoration: underline">Lihat</a></td>
+                <!-- <td><a href="{{ route('masyarakat.show', $v->nik) }}" style="text-decoration: underline">Lihat</a></td> -->
             </tr>
             @endforeach
         </tbody>
